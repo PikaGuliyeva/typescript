@@ -1,9 +1,10 @@
 "use strict";
-const adlar = ["Aysel", "Elnur", "Murad", "Leyla"];
-console.log("Say:", adlar.length);
-console.log("İlk tələbə:", adlar[0]);
-adlar.push("Nigar");
-for (let ad of adlar) {
-    console.log(ad);
-}
-adlar.push(25);
+let product = {
+    id: 1,
+    name: "Laptop",
+    price: 1500,
+    inStock: true,
+    description: "Yeni model laptop"
+};
+product.price = 1700;
+console.log(product);

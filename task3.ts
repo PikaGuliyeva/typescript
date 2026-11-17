@@ -1,11 +1,17 @@
-const adlar: string[] = ["Aysel", "Elnur", "Murad", "Leyla"];
+let product: {
+    readonly id: number;
+    name: string;
+    price: number;
+    inStock: boolean;
+    description?: string;
+} = {
+    id: 1,
+    name: "Laptop",
+    price: 1500,
+    inStock: true,
+    description: "Yeni model laptop"
+};
 
-console.log("Say:", adlar.length);
-console.log("İlk tələbə:", adlar[0]);
+product.price = 1700;
 
-adlar.push("Nigar");
-for (let ad of adlar) {
-    console.log(ad);
-}
-
-// adlar.push(25);
+console.log(product);

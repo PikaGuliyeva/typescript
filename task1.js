@@ -1,8 +1,6 @@
 "use strict";
-let ad = "Umid";
-let yas = 25;
-let seher = "Bakı";
-let telebedir = true;
-console.log(`Mənim adım ${ad}, ${yas} yaşım var, ${seher}da yaşayıram.`);
-// yas = "iyirmi";
-// Xeta cunki deyishen tipleri dogru deyil. yash deyisheni number tipinde olmalidir, string tipinde deyil.
+const students = ["Aysel", "Murad", "Nigar", "Elvin", "Leyla"];
+const ages = [19, 20, 18, 21, 19];
+students.push("Kamran");
+console.log(students);
+console.log(ages);

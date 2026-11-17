@@ -1,9 +1,7 @@
-let ad: string = "Umid";
-let yas: number = 25;
-let seher: string = "Bakı";
-let telebedir: boolean = true;
+const students: string[] = ["Aysel", "Murad", "Nigar", "Elvin", "Leyla"];
+const ages: number[] = [19, 20, 18, 21, 19];
 
-console.log(`Mənim adım ${ad}, ${yas} yaşım var, ${seher}da yaşayıram.`);
+students.push("Kamran");
 
-// yas = "iyirmi";
-// Xeta cunki deyishen tipleri dogru deyil. yash deyisheni number tipinde olmalidir, string tipinde deyil.
+console.log(students);
+console.log(ages);

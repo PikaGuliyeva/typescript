@@ -1,8 +1,28 @@
 "use strict";
-function qiymetHesabla(qiymet, endirim = 0, say) {
-    let yekunQiymet = qiymet - (qiymet * endirim / 100);
-    return yekunQiymet * (say ?? 1);
-}
-console.log(qiymetHesabla(100));
-console.log(qiymetHesabla(100, 10));
-console.log(qiymetHesabla(100, 10, 3));
+let books = [
+    {
+        id: 1,
+        title: "1984",
+        author: "George Orwell",
+        pages: 328,
+        available: true,
+        genre: "Roman"
+    },
+    {
+        id: 2,
+        title: "Cinayət və cəza",
+        author: "Dostoyevski",
+        pages: 671,
+        available: false
+    },
+    {
+        id: 3,
+        title: "Balaca şahzadə",
+        author: "Antoine de Saint-Exupery",
+        pages: 96,
+        available: true,
+        genre: "Fantastika"
+    }
+];
+let availableBooks = books.filter(book => book.available);
+console.log(availableBooks);
